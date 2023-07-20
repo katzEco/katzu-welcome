@@ -2,6 +2,7 @@ const color = require("bash-color");
 
 const art = require('./modules/art')
 const weather = require('./modules/weather')
+const wotd = require('./modules/wotd')
 
 function randomColors(inp) {
   let randomizer = Math.floor(Math.random() * 9);
@@ -37,7 +38,13 @@ function randomColors(inp) {
 }
 
 async function main() {
+  const word = await wotd()
+
+  console.log('');
   console.log(`    ${randomColors(art())}    |  ${randomColors(await weather())}`)
+  console.log(`  ${randomColors(word.word)} (idiom.)`);
+  console.log(`    ${randomColors(word.definition)}`);
+  console.log('');
 }
 
 main()
