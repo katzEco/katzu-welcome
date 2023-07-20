@@ -1,6 +1,6 @@
-const { log } = require("./shortkey");
+const { log } = require("./functions/shortkey");
 
-const art = require("./art");
+const art = require("./modules/art");
 
 function main() {
   log(art())
