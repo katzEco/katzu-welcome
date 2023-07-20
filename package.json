@@ -1,0 +1,21 @@
+{
+  "name": "katzu-welcome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon main.js",
+    "build": "pkg src/index.js -c package.json"
+  },
+  "pkg": {
+    "targets": [
+      "node14-linux-arm64",
+      "node14-linux-x64",
+      "node14-macos-arm64",
+      "node14-win-arm64",
+      "node14-win-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "author": "dethz"
+}
