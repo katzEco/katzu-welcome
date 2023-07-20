@@ -2,6 +2,4 @@ function log(inp) {
   console.log(inp)
 }
 
-module.exports = [
-  log
-]
+module.exports = [log]

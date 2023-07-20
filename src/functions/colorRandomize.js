@@ -1,7 +1,7 @@
-const color = require("bash-color");
+const color = require('bash-color')
 
 function randomColors(inp) {
-  let randomizer = Math.floor(Math.random() * 9);
+  let randomizer = Math.floor(Math.random() * 9)
 
   switch (randomizer) {
     case 1:
@@ -26,7 +26,7 @@ function randomColors(inp) {
       return color.yellow(inp)
 
     case 8:
-      return color.red(inp, true) 
+      return color.red(inp, true)
 
     default:
       return color.white(inp)
