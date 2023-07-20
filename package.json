@@ -17,5 +17,8 @@
     ],
     "outputPath": "dist"
   },
-  "author": "dethz"
+  "author": "dethz",
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4"
+  }
 }
