@@ -1,12 +1,12 @@
-const axios = require('axios')
+const p = require('phin')
 
 const city = 'Phayao'
 const link = `https://wttr.in/${city}?format=1`
 
 async function weather() {
-  const call = await axios.get(link)
+  const data = await p(link)
 
-  return `${city}  ${call.data}`
+  return `${city}  ${data.body}`
 }
 
 module.exports = weather
