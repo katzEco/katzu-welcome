@@ -1,43 +1,11 @@
-const pkgFace = require("cool-ascii-faces");
-const color = require("bash-color");
+const pkgFace = require('cool-ascii-faces')
 
-function randomColors(inp) {
-  let randomizer = Math.floor(Math.random() * 9);
-
-  switch (randomizer) {
-    case 1:
-      return color.yellow(inp, true)
-
-    case 2:
-      return color.blue(inp)
-
-    case 3:
-      return color.cyan(inp)
-
-    case 4:
-      return color.green(inp)
-
-    case 5:
-      return color.purple(inp)
-
-    case 6:
-      return color.red(inp)
-
-    case 7:
-      return color.yellow(inp)
-
-    case 8:
-      return color.red(inp, true) 
-
-    default:
-      return color.white(inp)
-  }
-}
+const { randomColors } = require('../functions/colorRandomize')
 
 function faces() {
-  const rtn = randomColors(pkgFace());
+  const rtn = randomColors(pkgFace())
 
   return rtn
 }
 
-module.exports = faces;
+module.exports = faces
