@@ -37,7 +37,7 @@ function randomColors(inp) {
 }
 
 async function main() {
-  console.log(`${randomColors(art())}  |  ${randomColors(await weather())}`)
+  console.log(`    ${randomColors(art())}    |  ${randomColors(await weather())}`)
 }
 
 main()

@@ -6,7 +6,7 @@ const link = `https://wttr.in/${city}?format=1`
 async function weather() {
   const call = await axios.get(link)
 
-  return call.data
+  return `${city}  ${call.data}`
 }
 
 module.exports = weather
