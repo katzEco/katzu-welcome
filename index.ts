@@ -6,9 +6,10 @@ import { runWelcome } from "./src/welcome.ts";
 import { askInteractiveOptions } from "./src/modules/prompt.ts";
 
 async function main() {
+  const version = pkg.version || "1.0.3";
   const argv = await yargs(hideBin(process.argv))
     .scriptName("katzu-welcome")
-    .usage("$0 [options]", "Personalized terminal welcome banner")
+    .usage(`$0 v${version}\n\nPersonalized terminal welcome banner\n\nUsage: $0 [options]`)
     .option("city", {
       alias: "c",
       type: "string",
@@ -44,7 +45,7 @@ async function main() {
     })
     .help("help", "Show help")
     .alias("h", "help")
-    .version(pkg.version || "1.0.2")
+    .version(version)
     .alias("v", "version")
     .parse();
 
