@@ -1,0 +1,16 @@
+{
+  "repo": "kizuna-inc/kz-rule",
+  "branch": "main",
+  "format": "agent",
+  "formats": [
+    "agent",
+    "claude"
+  ],
+  "lastSync": "2026-10-02T10:57:01.313Z",
+  "installedRules": [
+    "use-bun",
+    "version-bump",
+    "release-note"
+  ],
+  "installedSkills": []
+}
