@@ -1,12 +1,15 @@
-# katzu's Welcome
+# katzu-welcome
 
-## Table of Contents
- - [Source](#source-that-i-used)
+To install dependencies:
 
-## Source that i used
-  - Fetching scripts
-      https://github.com/ethanent/phin
-  - Weather Forecasting
-      https://wttr.in/Phayao?format=1
-  - Words of the day script
-      https://github.com/mcnaveen/Random-Words-API
+```bash
+bun install
+```
+
+To run:
+
+```bash
+bun run index.ts
+```
+
+This project was created using `bun init` in bun v1.4.2. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
