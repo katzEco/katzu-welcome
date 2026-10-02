@@ -13,6 +13,9 @@
     "start": "bun run index.ts",
     "welcome": "bun run index.ts",
     "dev": "bun --watch index.ts",
+    "build": "bun run scripts/build.ts",
+    "build:bin": "bun run scripts/build.ts --bin-only",
+    "build:js": "bun run scripts/build.ts --js-only",
     "test": "bun test"
   },
   "devDependencies": {
